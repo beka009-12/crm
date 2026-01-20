@@ -1,8 +1,8 @@
-import HomePage from "@/src/components/pages/HomePage";
+import DesctopPage from "@/src/components/pages/DesctopPage";
 import { type FC } from "react";
 
 const page: FC = () => {
-  return <HomePage />;
+  return <DesctopPage />;
 };
 
 export default page;

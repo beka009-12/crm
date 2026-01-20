@@ -1,4 +1,45 @@
 .Header {
   padding: 15px 20px 15px 20px;
   border-bottom: 1px solid #ccc;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .avatar {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: end;
+      .bell {
+        all: unset;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ccc;
+        padding: 7px;
+        border-radius: 50%;
+        .bellIcon {
+          stroke: #4b9cfb;
+          stroke-width: 2px;
+          width: 20px;
+          height: 20px;
+        }
+      }
+      .spanLine {
+        width: 1px;
+        height: 30px;
+        background-color: #ccc;
+      }
+      .avatarImage {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        cursor: pointer;
+      }
+    }
+  }
 }
