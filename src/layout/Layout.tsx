@@ -1,7 +1,7 @@
 import { type FC, ReactNode } from "react";
 import scss from "./Layout.module.scss";
 import Header from "./header/Header";
-import Footer from "./footer/Footer";
+import SideBar from "./sideBar/SideBar";
 
 interface ILay {
   children: ReactNode;
@@ -10,9 +10,12 @@ interface ILay {
 const Layout: FC<ILay> = ({ children }) => {
   return (
     <div className={scss.Layout}>
-      <Header />
-      <main className={scss.main}>{children}</main>
-      <Footer />
+      <SideBar />
+
+      <div className={scss.content}>
+        <Header />
+        <main className={scss.main}>{children}</main>
+      </div>
     </div>
   );
 };

@@ -3,11 +3,9 @@ import scss from "./Header.module.scss";
 
 const Header: FC = () => {
   return (
-    <section className={scss.Header}>
-      <div className="container">
-        <div className={scss.content}>Header</div>
-      </div>
-    </section>
+    <header className={scss.Header}>
+      <div className={scss.content}>Header</div>
+    </header>
   );
 };
 

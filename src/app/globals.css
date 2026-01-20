@@ -5,7 +5,8 @@
   text-decoration: none;
   border: none;
   list-style: none;
-  font-family: "Inter", sans-serif;
+  color: #535353;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {

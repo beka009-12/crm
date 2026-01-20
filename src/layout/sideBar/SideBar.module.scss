@@ -1,0 +1,43 @@
+.SideBar {
+  width: 250px;
+  border-right: 1px solid #ccc;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: start;
+      margin-top: 20px;
+      padding: 10px 15px 10px 30px;
+      color: #4b9cfb;
+    }
+    .routs {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      .active {
+        padding: 10px 15px 10px 30px;
+        display: flex;
+        align-items: start;
+        background: none;
+        p {
+          font-weight: 600;
+          display: flex;
+          align-items: center;
+          gap: 7px;
+          .svg {
+            width: 22px;
+            height: 22px;
+          }
+        }
+        &:hover {
+          background: #f5f5f5;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
